@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A semantic HTML5 page demonstrating accessibility and SEO best practices for PLP assignment">
+  <title>PLP HTML5 Assignment: Semantic Web Page with Accessibility Features</title>
+</head>
+<body>
+
+  <header>
+    <h1>Semantic HTML5 Demonstration</h1>
+    <p>Accessible, SEO-friendly page structure</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#form">Registration Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>This is my enhanced form assignment for PLP demonstrating HTML5 semantic structure, accessibility, and SEO principles.</p>
+
+      <article aria-labelledby="features-heading">
+        <h3 id="features-heading">Key Features</h3>
+        <ul>
+          <li>HTML5 Semantic Tags</li>
+          <li>Accessibility Best Practices</li>
+          <li>Search Engine Optimization</li>
+          <li>Built-in Form Validation</li>
+        </ul>
+      </article>
+
+      <article aria-labelledby="steps-heading">
+        <h3 id="steps-heading">How To Use</h3>
+        <ol>
+          <li>Navigate through the page</li>
+          <li>Complete the registration form</li>
+          <li>Submit your information</li>
+        </ol>
+      </article>
+    </section>
+
+    <section id="form" aria-labelledby="form-heading">
+      <h2 id="form-heading">User Registration</h2>
+      <form action="#" method="post" autocomplete="on" aria-label="Registration form">
+        <fieldset aria-labelledby="personal-info">
+          <legend id="personal-info">Personal Information</legend>
+          
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required aria-required="true">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Choose a password" required minlength="6" aria-required="true">
+        </fieldset>
+
+        <fieldset aria-labelledby="additional-info">
+          <legend id="additional-info">Additional Information</legend>
+          
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" max="120" required aria-required="true">
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required aria-required="true">
+
+          <fieldset aria-labelledby="gender-info">
+            <legend id="gender-info">Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male" required aria-required="true">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </fieldset>
+        </fieldset>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required aria-required="true">
+          <option value="">--Select Country--</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." aria-label="Short biography"></textarea>
+
+        <label for="resume">Upload Resume (PDF):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf" aria-label="Resume upload">
+
+        <label>
+          <input type="checkbox" name="terms" required aria-required="true">
+          I agree to the terms and conditions
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PLP HTML5 Assignment</p>
+    <address>
+      Contact: <a href="mailto:leahajoseph@plp.com">leahajose@plp.com</a>
+    </address>
+  </footer>
+
+</body>
+</html>
